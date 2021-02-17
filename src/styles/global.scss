@@ -27,14 +27,17 @@ body {
   background: #2d2d2d;
 }
 
-.dead-center {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+.language-javascript {
+  font-size: 1.15em !important;
+  margin: 0 auto;
 }
 
 pre {
   background-color: transparent !important;
-  margin: 0 !important;
+  margin: 0 auto !important;
+  padding: 0.5em 1em 1em !important;
+}
+
+.logo-container {
+  transform: translate(2.5%, -23%);
 }
