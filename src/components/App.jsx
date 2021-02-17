@@ -11,6 +11,10 @@ export default function App() {
   // https://bit.ly/3pvg8td
   const [showMiddleLine, setShowMiddleLine] = useState(false)
   const [showOutline, setShowOutline] = useState(false)
+  const containerStyles = {
+    ...backgroundDimensions,
+    outline: showOutline ? '2px solid lime' : 'none',
+  }
 
   useEffect(() => {
     Prism.highlightAll()
@@ -25,12 +29,7 @@ export default function App() {
 
       <section className="flex-grow-1 pt24 code-bg white-80">
         {/* BACKGROUND CONTAINER */}
-        <div
-          className="relative mha code-bg"
-          style={{
-            ...backgroundDimensions,
-            ...(showOutline ? {outline: '2px solid lime'} : {}),
-          }}>
+        <div className="relative mha code-bg" style={containerStyles}>
           {showMiddleLine && (
             <div className="absolute w-100 top-50 ba-1px lime" />
           )}
