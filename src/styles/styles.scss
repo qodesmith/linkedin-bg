@@ -8,14 +8,47 @@
 
 // https://github.com/qodesmith/sassyons
 @import '~sassyons/dist/sassyons.css';
+
+/* THEMES THAT COME WITH PRISM OUT OF THE BOX */
+/**********************************************/
 // @import '~prismjs/themes/prism.css';
 // @import '~prismjs/themes/prism-coy.css';
 // @import '~prismjs/themes/prism-dark.css';
 // @import '~prismjs/themes/prism-funky.css';
 // @import '~prismjs/themes/prism-okaidia.css';
 // @import '~prismjs/themes/prism-solarizedlight.css';
-@import '~prismjs/themes/prism-tomorrow.css';
+// @import '~prismjs/themes/prism-tomorrow.css';
 // @import '~prismjs/themes/prism-twilight.css';
+
+/* 3RD PARTY PRISM THEMES */
+/**************************/
+// @import '~prism-themes/themes/prism-a11y-dark.css';
+// @import '~prism-themes/themes/prism-atom-dark.css';
+// @import '~prism-themes/themes/prism-base16-ateliersulphurpool.light.css';
+// @import '~prism-themes/themes/prism-cb.css';
+// @import '~prism-themes/themes/prism-coldark-cold.css';
+// @import '~prism-themes/themes/prism-coldark-dark.css';
+// @import '~prism-themes/themes/prism-coy-without-shadows.css';
+// @import '~prism-themes/themes/prism-darcula.css';
+// @import '~prism-themes/themes/prism-dracula.css';
+// @import '~prism-themes/themes/prism-duotone-dark.css';
+// @import '~prism-themes/themes/prism-duotone-earth.css';
+// @import '~prism-themes/themes/prism-duotone-forest.css';
+// @import '~prism-themes/themes/prism-duotone-light.css';
+// @import '~prism-themes/themes/prism-duotone-sea.css';
+// @import '~prism-themes/themes/prism-duotone-space.css';
+// @import '~prism-themes/themes/prism-ghcolors.css';
+// @import '~prism-themes/themes/prism-hopscotch.css';
+// @import '~prism-themes/themes/prism-material-dark.css';
+// @import '~prism-themes/themes/prism-material-light.css';
+// @import '~prism-themes/themes/prism-material-oceanic.css';
+// @import '~prism-themes/themes/prism-nord.css';
+// @import '~prism-themes/themes/prism-pojoaque.css';
+// @import '~prism-themes/themes/prism-shades-of-purple.css';
+// @import '~prism-themes/themes/prism-synthwave84.css';
+// @import '~prism-themes/themes/prism-vs.css';
+// @import '~prism-themes/themes/prism-vsc-dark-plus.css';
+@import '~prism-themes/themes/prism-xonokai.css';
 
 /*
   Application Styles

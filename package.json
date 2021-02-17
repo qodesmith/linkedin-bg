@@ -41,6 +41,7 @@
     "postcss-combine-duplicated-selectors": "^10.0.2",
     "postcss-combine-media-query": "^1.0.1",
     "postcss-loader": "^4.2.0",
+    "prism-themes": "^1.5.0",
     "prismjs": "^1.23.0",
     "purgecss-whitelister": "^2.4.0",
     "react": "^17.0.1",

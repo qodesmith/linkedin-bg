@@ -1,5 +1,6 @@
 # The majority of this files contents were taken from Github's Node example:
 # https://github.com/github/gitignore/blob/master/Node.gitignore
+package-lock.json
 
 # Mac-specific
 .DS_Store

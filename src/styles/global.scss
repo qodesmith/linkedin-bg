@@ -23,7 +23,7 @@ body {
   font: 16px 'Open Sans', Arial, Helvetica, sans-serif;
 }
 
-.prism-tomorrow-bg {
+.code-bg {
   background: #2d2d2d;
 }
 
@@ -35,7 +35,7 @@ body {
 pre {
   background-color: transparent !important;
   margin: 0 auto !important;
-  padding: 0.5em 1em 1em !important;
+  border: none !important;
 }
 
 .logo-container {

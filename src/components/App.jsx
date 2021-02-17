@@ -5,11 +5,12 @@ import ReactLogo from 'components/ReactLogo'
 import NodeJSLogo from 'components/NodeJSLogo'
 
 Prism.manual = true
+const backgroundDimensions = {width: 1584, height: 396}
 
 export default function App() {
   // https://bit.ly/3pvg8td
-  const backgroundDimensions = {width: '1584px', height: '396px'}
   const [showMiddleLine, setShowMiddleLine] = useState(false)
+  const [showOutline, setShowOutline] = useState(false)
 
   useEffect(() => {
     Prism.highlightAll()
@@ -22,18 +23,21 @@ export default function App() {
         <div>By The Qodesmith</div>
       </header>
 
-      <section className="flex-grow-1 pt24">
+      <section className="flex-grow-1 pt24 code-bg white-80">
         {/* BACKGROUND CONTAINER */}
         <div
-          className="relative mha prism-tomorrow-bg"
-          style={backgroundDimensions}>
+          className="relative mha code-bg"
+          style={{
+            ...backgroundDimensions,
+            ...(showOutline ? {outline: '2px solid lime'} : {}),
+          }}>
           {showMiddleLine && (
             <div className="absolute w-100 top-50 ba-1px lime" />
           )}
 
           {/* LOGO CONTAINER */}
           <div className="logo-container absolute top-50 right-0">
-            <div className="df justify-center align-items-center w-80 mha">
+            <div className="df justify-center align-items-center w-80 mha overflow-h">
               <JSLogo
                 size="150"
                 className="radius12 overflow-h flex-shrink-0 flex-grow-0"
@@ -51,18 +55,25 @@ export default function App() {
                   `i.am       = 'a front end developer'`,
                   `i.usedTo   = ['rap', 'produce beats', 'explore subway tunnels', 'drive 18-wheelers', 'be an MTA Track Worker']`,
                   `i.love     = ['God', 'family', 'JavaScript', 'Hip-Hop', 'urban exploration', 'snowboarding', 'meaningful challenges']`,
-                  `i.workWith = ['node', 'react', 'scss', 'mongodb', 'open-minded people', 'my hands']`,
+                  `i.workWith = ['node', 'react', 'scss', 'mongodb', 'open-minded people', 'my hands', "what I've got"]`,
                   `i.aspire   = 'to inspire others and change the world'`,
                 ].join('\n')}
               </code>
             </pre>
           </div>
         </div>
-        <div className="mt16 tc f-1-3em">1584 x 396</div>
+        <div className="mt16 tc f-1-3em">
+          {backgroundDimensions.width} &times; {backgroundDimensions.height}
+        </div>
         <button
           className="dt mha mt16 f-1-3em"
           onClick={() => setShowMiddleLine(s => !s)}>
           Toggle Middle Line
+        </button>
+        <button
+          className="dt mha mt16 f-1-3em"
+          onClick={() => setShowOutline(s => !s)}>
+          Toggle Outline
         </button>
       </section>
     </div>
